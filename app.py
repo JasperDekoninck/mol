@@ -1,0 +1,119 @@
+from flask import Flask, render_template, request, jsonify
+import csv
+import hashlib
+import os
+
+app = Flask(__name__)
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+DATA_DIR = os.path.join(STATIC_DIR, "data")
+
+MOLE_HASH = "81f3bf42a93cf18dece9321ac5c93313126eb5ca92164d74643e4cbf60ecde9c"
+
+
+def resolve_csv_path(csv_param: str):
+    if not csv_param:
+        csv_param = "data/test1.csv"
+
+    normalized = os.path.normpath(csv_param).lstrip(os.sep)
+    if normalized.startswith("static" + os.sep):
+        normalized = normalized[len("static") + 1 :]
+
+    abs_path = os.path.join(STATIC_DIR, normalized)
+    if not abs_path.startswith(STATIC_DIR + os.sep):
+        return None, None
+
+    if not os.path.isfile(abs_path):
+        return None, None
+
+    return abs_path, normalized
+
+
+def load_rankings(csv_path: str):
+    with open(csv_path, newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = reader.fieldnames or []
+        player_columns = [
+            name for name in fieldnames if name not in ("Timestamp", "Voornaam")
+        ]
+
+        mole_column = None
+        for name in player_columns:
+            name_hash = hashlib.sha256(name.encode("utf-8")).hexdigest()
+            if name_hash == MOLE_HASH:
+                mole_column = name
+                break
+
+        if not mole_column:
+            raise ValueError("Mole column not found.")
+
+        entries = []
+        for index, row in enumerate(reader):
+            player_name = (row.get("Voornaam") or "").strip()
+            total = 0.0
+            scores = {}
+            for col in player_columns:
+                raw_value = row.get(col, "0")
+                try:
+                    value = float(raw_value) if raw_value else 0.0
+                except ValueError:
+                    value = 0.0
+                scores[col] = value
+                total += value
+
+            mole_score = scores.get(mole_column, 0.0)
+            mole_probability = mole_score / total if total > 0 else 0.0
+            entries.append(
+                {
+                    "name": player_name,
+                    "mole_probability": mole_probability,
+                    "index": index,
+                }
+            )
+
+    ranked = sorted(entries, key=lambda item: (-item["mole_probability"], item["index"]))
+    return ranked
+
+
+@app.route("/", methods=["GET"])
+def index():
+    csv_param = request.args.get("csv", "data/test1.csv")
+    _, normalized = resolve_csv_path(csv_param)
+    error = request.args.get("error")
+    return render_template(
+        "index.html",
+        csv_param=normalized or csv_param,
+        error=error,
+    )
+
+
+@app.route("/check", methods=["POST"])
+def check_name():
+    name = (request.form.get("name") or "").strip()
+    csv_param = request.form.get("csv", "data/test1.csv")
+    csv_path, normalized = resolve_csv_path(csv_param)
+
+    if not name:
+        return "", 204
+
+    if not csv_path:
+        return jsonify({"error": "CSV file not found."}), 400
+
+    try:
+        ranked = load_rankings(csv_path)
+    except Exception:
+        return jsonify({"error": "Could not read the CSV file."}), 400
+
+    name_lookup = {item["name"].lower(): item for item in ranked if item["name"]}
+    if name.lower() not in name_lookup:
+        return jsonify({"error": "Name not found in the CSV."}), 404
+
+    bottom_three = {item["name"].lower() for item in ranked[-3:] if item["name"]}
+    color = "red" if name.lower() in bottom_three else "green"
+
+    return jsonify({"color": color})
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
