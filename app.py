@@ -30,7 +30,42 @@ def resolve_csv_path(csv_param: str):
     return abs_path, normalized
 
 
-def load_rankings(csv_path: str):
+def load_bonus_map(csv_path: str):
+    with open(csv_path, newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        field_map = {name.lower(): name for name in (reader.fieldnames or [])}
+        name_key = None
+        bonus_key = None
+        for key in ("naam", "name", "voornaam"):
+            if key in field_map:
+                name_key = field_map[key]
+                break
+        if "bonus" in field_map:
+            bonus_key = field_map["bonus"]
+
+        if not name_key or not bonus_key:
+            raise ValueError("Bonus CSV must include name and bonus columns.")
+
+        bonuses = {}
+        for row in reader:
+            raw_name = (row.get(name_key) or "").strip()
+            if not raw_name:
+                continue
+            raw_bonus = row.get(bonus_key, "0")
+            try:
+                bonus_value = (float(raw_bonus) / 100.0) if raw_bonus else 0.0
+            except ValueError:
+                bonus_value = 0.0
+            bonuses[raw_name.lower()] = bonus_value
+
+    return bonuses
+
+
+def load_rankings(csv_path: str, bonus_path: str = None):
+    bonuses = {}
+    if bonus_path:
+        bonuses = load_bonus_map(bonus_path)
+
     with open(csv_path, newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
         fieldnames = reader.fieldnames or []
@@ -64,6 +99,8 @@ def load_rankings(csv_path: str):
 
             mole_score = scores.get(mole_column, 0.0)
             mole_probability = mole_score / total if total > 0 else 0.0
+            if bonuses:
+                mole_probability += bonuses.get(player_name.lower(), 0.0)
             entries.append(
                 {
                     "name": player_name,
@@ -79,11 +116,14 @@ def load_rankings(csv_path: str):
 @app.route("/", methods=["GET"])
 def index():
     csv_param = request.args.get("csv", "data/test1.csv")
+    extra_param = request.args.get("extra", "data/extra.csv")
     _, normalized = resolve_csv_path(csv_param)
+    _, extra_normalized = resolve_csv_path(extra_param)
     error = request.args.get("error")
     return render_template(
         "index.html",
         csv_param=normalized or csv_param,
+        extra_param=extra_normalized or extra_param,
         error=error,
     )
 
@@ -92,7 +132,9 @@ def index():
 def check_name():
     name = (request.form.get("name") or "").strip()
     csv_param = request.form.get("csv", "data/test1.csv")
+    extra_param = request.form.get("extra", "data/extra.csv")
     csv_path, normalized = resolve_csv_path(csv_param)
+    extra_path, _ = resolve_csv_path(extra_param)
 
     if not name:
         return "", 204
@@ -100,8 +142,11 @@ def check_name():
     if not csv_path:
         return jsonify({"error": "CSV file not found."}), 400
 
+    if not extra_path:
+        return jsonify({"error": "Bonus CSV file not found."}), 400
+
     try:
-        ranked = load_rankings(csv_path)
+        ranked = load_rankings(csv_path, extra_path)
     except Exception:
         return jsonify({"error": "Could not read the CSV file."}), 400
 

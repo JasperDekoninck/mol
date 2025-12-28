@@ -1,17 +1,17 @@
-# Een toneelstukje
+# Een toneelstukje (30 minuten)
 In dit spel krijgen de spelers de opdrach om een kort toneelstukje op te voeren. Eerst, kunnen de spelers zich in drie groepjes opdelen:
 - Strategen (4 spelers)
 - Avonturiers (4 spelers)
-- Dierenliefhebbers (3 spelers)
+- Filmkenners (3 spelers)
 
-Zij zullen telkens per groepje vijf minuten in een andere ruimte apart gezet worden waar ze een scene krijgen toegewezen uit een bekende film of serie. Ze krijgen ook een korte beschrijving van de setting en de karakters die ze moeten spelen. Na hun voorbereidingstijd, moeten de spelers het toneelstukje opvoeren voor de andere spelers, zonder:
+De eerste twee groepjes zullen telkens per groepje vijf minuten in een andere ruimte apart gezet worden waar ze een scene krijgen toegewezen uit een bekende film of serie. Ze krijgen ook een korte beschrijving van de setting en de karakters die ze moeten spelen. Na hun voorbereidingstijd, moeten de spelers het toneelstukje opvoeren voor de filmkenners, zonder:
 - Te spreken
 - Enige rekwisieten te gebruiken
 - Enige kostuums te gebruiken
 - Woorden te proberen vormen.
-Nadien moeten de andere spelers raden welke film of serie het is, en twee vragen oplossen over de scene die gespeeld wordt. Elk van de drie vragen is 150 euro waard. Details zijn belangrijk!
+Nadien moeten de filmkenners raden welke film of serie het is, en twee vragen oplossen over de scene die gespeeld wordt. Elk van de drie vragen is 150 euro waard. Details zijn belangrijk! Enkel de filmkenners mogen antwoorden, en de strategen en avonturiers mogen niet meedoen aan het raden.
 
-**Enkel voor de mol:** In je eigen scene, probeer te vermijden dat de twee vragen die gesteld zullen worden beantwoord kunnen worden (de vragen staan beneden). Het is moeilijk om andere groepjes te saboteren, het is waarschijnlijk beter om subtiel in te spelen op foute antwoorden die geopperd worden door de andere spelers, tenzij er misschien echt een kans is om verwarring te zaaien met iets zeer duidelijk.
+**Enkel voor de mol:** In je eigen scene, probeer te vermijden dat de twee vragen die gesteld zullen worden beantwoord kunnen worden (de vragen staan beneden). Het is ook moeilijk om als filmkenner te saboteren, maar beter om subtiel in te spelen op foute antwoorden die geopperd worden door de andere spelers, tenzij er misschien echt een kans is om verwarring te zaaien met iets zeer duidelijk.
 
 ## Scene 1: Harry Potter en de Steen der Wijzen
 **Enkel voor de groep/mol:**
@@ -50,7 +50,7 @@ De Rollen:
 4. Raptor 2: Dinosaurus, sluipt, snuift.
 
 Het Script (zonder woorden!):
-- De Binnenkomst: Tim en Lex sluipen de keuken in en verstoppen zich achter (denkbeeldige) RVS aanrechten.
+- De Binnenkomst: Tim en Lex sluipen de keuken in en verstoppen zich achter (denkbeeldige) aanrechten.
 - De Jagers: Raptor 1 en Raptor 2 komen binnen. Ze tikken met hun klauwen op de vloer/tafels. Ze snuffelen.
 - De Afleiding: Tim stoot per ongeluk een soeplepel om. Het valt op de grond. De Raptors kijken direct die kant op!
 - De Achtervolging: De kinderen kruipen weg. De Raptors splitsen op.
@@ -67,30 +67,3 @@ Het Script (zonder woorden!):
 **Enkel voor de mol:** Antwoord: Ze sluiten het op in de vriezer.
 
 **Enkel voor de mol:** Sla de lepel een beetje over, en zorg ervoor dat jullie niet duidelijk laten zien dat de vriezer koud is (niet rillen of zo) om de antwoorden te saboteren.
-
-
-## Scene 3: The Lion King
-Jullie Opdracht: Beeld de "Hakuna Matata" scène uit: de ontmoeting en het opgroeien.
-
-De Rollen:
-1. Timon (Stokstaartje): Klein, druk, staat vaak op achterpoten.
-2. Pumbaa (Wrattenzwijn): Groot, log, loopt op vier poten, laat windjes.
-3. Simba (De Leeuw): Eerst verdrietig en klein, later stoer en groot.
-
-Het Script (zonder woorden!):
-- De Ontmoeting: Timon en Pumbaa vinden Simba die flauwgevallen is in de woestijn. Ze maken hem wakker door water te spatten in zijn gezicht?. Simba is erg verdrietig.
-- De Filosofie: Timon en Pumbaa leren Simba om zich geen zorgen te maken. Ze maken vrolijke gebaren ("geen zorgen").
-- Het Eten: Ze hebben honger. Timon tilt een (denkbeeldige) boomstam op. Pumbaa kijkt eronder. Ze pakken glibberige insecten en larven. Ze slurpen ze luidruchtig naar binnen. Ze bieden er een aan Simba aan. Simba twijfelt, eet het, en vindt het lekker!
-- De Boomstam: Ze lopen achter elkaar aan over een (denkbeeldige) boomstam terwijl ze met hun hoofden ritmisch op en neer bewegen en Hakuna Matata zingen.
-- De Groei: Terwijl ze lopen, beeldt Simba uit dat hij plotseling groter wordt (zijn manen schudt, brult). Hij is nu een volwassen leeuw.
-
-**Vragen:**
-1. Hoe maken de twee vrienden Simba wakker?
-
-**Enkel voor de mol:** Antwoord: Door water in zijn gezicht te spatten.
-
-2. Wat voor een object tillen ze op om insecten onder te zoeken?
-
-**Enkel voor de mol:** Antwoord: Een boomstam.
-
-**Enkel voor de mol:** Klap op zijn gezicht in plaats van water te gebruiken en til een steen op in plaats van een boomstam om de antwoorden te saboteren.
