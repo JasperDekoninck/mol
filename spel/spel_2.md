@@ -11,7 +11,7 @@ De eerste twee groepjes zullen telkens per groepje vijf minuten in een andere ru
 - Woorden te proberen vormen.
 Nadien moeten de filmkenners raden welke film of serie het is, en twee vragen oplossen over de scene die gespeeld wordt. Elk van de drie vragen is 150 euro waard. Details zijn belangrijk! Enkel de filmkenners mogen antwoorden, en de strategen en avonturiers mogen niet meedoen aan het raden.
 
-**Enkel voor de mol:** In je eigen scene, probeer te vermijden dat de twee vragen die gesteld zullen worden beantwoord kunnen worden (de vragen staan beneden). Het is ook moeilijk om als filmkenner te saboteren, maar beter om subtiel in te spelen op foute antwoorden die geopperd worden door de andere spelers, tenzij er misschien echt een kans is om verwarring te zaaien met iets zeer duidelijk.
+**Enkel voor de mol:** In je eigen scene, probeer te vermijden dat de twee vragen die gesteld zullen worden beantwoord kunnen worden (de vragen staan beneden). Het is ook mogelijk om als filmkenner te saboteren, maar beter om subtiel in te spelen op foute antwoorden die geopperd worden door de andere spelers, tenzij er misschien echt een kans is om verwarring te zaaien met iets zeer duidelijk.
 
 ## Scene 1: Harry Potter en de Steen der Wijzen
 **Enkel voor de groep/mol:**
@@ -24,8 +24,8 @@ De Rollen:
 
 Het Script (zonder woorden!):
 - De Situatie: Harry, Ron en Hermelien staan op een groot bord. Ze kijken bang naar de overkant waar de Witte Koningin staat.
-- Het Plan: Ron wijst en dirigeert Harry en Hermelien naar hun plek. Ze willen naar Ron toe rennen, maar Ron houdt ze tegen: "Blijf op je vak staan!".
-- Het Offer: Ron beseft dat hij zich moet opofferen om te winnen. Hij doet een stap naar voren met zijn paard.
+- Het Plan: Ron wijst en dirigeert Harry en Hermelien naar hun plek zodat het schaken kan beginnen. Ze willen naar Ron toe rennen, maar Ron houdt ze tegen: "Blijf op je vak staan!".
+- Het Offer: Ron beseft dat hij zich moet opofferen om te winnen. Hij doet een stap met een paardbeweging.
 - De Aanval: De Witte Koningin komt langzaam en dreigend op Ron af. Ze pakt haar zwaard en slaat/steekt het paard van Ron neer.
 - De Nasleep: Ron valt hard op de grond en blijft roerloos liggen. Harry en Hermelien schrikken, maar mogen niet bewegen tot het spel klaar is. Dan zet Harry de Koning schaakmat.
 

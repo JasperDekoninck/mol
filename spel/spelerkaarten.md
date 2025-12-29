@@ -51,4 +51,4 @@ Spel 6: 100 euro
 # Tom
 Spel 1: Vrijstelling
 Spel 5: maximum 3
-Spel 6: 1500 euro
+Spel 6: 2000 euro

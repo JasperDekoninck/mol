@@ -27,4 +27,4 @@ Half Finale Vrijstelling: Winnaar G8
 
 Finale: Winnaar Halve Finale vs Vrijstelling Halve Finale
 
-**Enkel voor de mol:** Probeer een mindset van winnen te creëren bij de spelers, zodat ze minder rekkers aan hun tegenstanders geven. Je cared niet om de groepspot, je wilt gewoon winnen. Je kan uiteraard ook doen alsof je maar heel weinig rekkers mag geven (maar dit is gevaarlijk als ze door hebben dat iedereen een andere limiet heeft).
+**Enkel voor de mol:** Probeer een mindset van winnen te creëren bij de spelers, zodat ze minder rekkers aan hun tegenstanders geven. Je cared niet om de groepspot, je wilt gewoon winnen. Je kan uiteraard ook doen alsof je maar heel weinig rekkers mag geven (maar dit is gevaarlijk als ze door hebben dat iedereen een andere limiet heeft). Misschien op voorhand eens oefenen door op een doel op de grond vijf meter van je af te schieten met een rekker, zodat je een idee hebt van hoe moeilijk het is om dicht bij het doel te schieten (dit zorgt ervoor dat je zo lang mogelijk blijft leven).
