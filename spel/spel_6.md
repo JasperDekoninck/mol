@@ -1,12 +1,10 @@
-# Molboekjes Kopen (15 minuten)
-Er zijn al zes personen die een rood scherm hebben gekregen. In hun "molboekjes" staat hun hoofdverdachte opgeschreven. In dit spel zal er geboden worden op deze informatie. De speler die het 2e hoogste bod uitbrengt, krijgt deze informatie, en dat geld zal uit de groepspot gaan. Elke speler heeft in zijn spelerboekje een getal gekregen: zij mogen niet hoger bieden dan dit getal.
 
-De spelers krijgen 10 minuten om te bespreken wat er zal gebeuren. Aan het einde van deze 10 minuten zal iedereen publiek na elkaar zijn/haar "bod" aangeven (er mag gelogen worden). Na deze biedronde, zal iedereen een getal + hun naam verborgen op een papiertje schrijven (de getallen mogen niet hoger zijn dan hun maximum, maar mogen verschillen van het getal dat publiek werd aangekondigd).
+# Murder Mystery (15 minuten)
+Er is een moord gebeurd. De mol is vermoord door degene die de hoogste score behaalde op de vorige test. De mol heeft geen zelfmoord gepleegd. De groep kan $n$ personen naar voren schuiven als de mogelijke daders. Als de dader bij deze $n$ personen zit, dan gaat er $1000 / n$ euro in de groepspot. De spelers krijgen 15 minuten om te discussieren wie ze naar voren willen schuiven. De presentator zegt enkel of het geld in de pot gaat, hij zegt niet wie de dader is.
 
-**Enkel voor de mol:** Tijdens de discussie kan je zeggen dat je echt wilt winnen. Bied ook gewoon 2000 euro, het hoogste bod dat mogelijk is. Aangezien ik enkel het 2e hoogste bod ga bekendmaken, maakt dit je niet meer verdacht. Zeg misschien niet dat je 2000 euro gaat bieden, want dat maakt je wel verdacht, gewoon een hoog getal (1000 euro ofzo). De enige relevante informatie is hoeveel mensen mogen bieden:
-- 2x 100 euro
-- 2x 250 euro
-- 2x 500 euro
-- 2x 1000 euro
-- 2x 1500 euro 
-- 1x 2000 euro (dit ben jij)
+**Enkel voor de mol:** De presentator zal ervoor zorgen dat de persoon met de hoogste score als derde zal worden afgeroepen in de vorige stemronde. Zorg ervoor dat deze persoon niet geselecteerd wordt.
+
+**Enkel voor de presentator/mol:** Als ze te snel beslissen, geef dan de volgende zaken aan:
+- Als 1 persoon naar voren wordt geschoven, krijgt deze heel veel informatie.
+- Misschien moeten jullie zeggen wie jullie hoofdverdachte is (of misschien ook niet)?
+- Als er meerdere personen naar voren worden geschoven, zijn ze minder zeker. Als er geen geld in de pot gaat, weten zij enkel dat zij waarschijnlijk niet op het juiste spoor zitten.
