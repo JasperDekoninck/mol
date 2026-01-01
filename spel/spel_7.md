@@ -1,4 +1,7 @@
 # Eenentwintigen (15 minuten)
+
+**Note: geen tijdslimiet op gezet, geen geld uit de groepspot, maar gewoon 4 fouten en dan stoppen.**
+
 In dit spel moeten de spelers simpelweg tot 21 tellen door om de beurt het volgende getal te zeggen. Elke keer de spelers tot 21 raken, gaat er 100 euro in de groepspot. Elke keer een foutje wordt gemaakt (een speler zegt een verkeerd getal, of een speler spreekt buiten beurt), gaat er 50 euro uit de groepspot. Spelers krijgen maximaal 10 minuten. Uiteraard, elke keer 21 wordt bereikt, komt er een nieuwe regel bij. Oude regels worden eerst toegepast, nieuwe regels daarna.
 
 1. Gewoon tot 21 tellen.

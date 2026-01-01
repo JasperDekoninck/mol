@@ -1,6 +1,6 @@
 # Toernooitje Rekker Schieten (30 minuten)
 
-# Note: Niet gespeeld wegens tijdsgebrek.
+**Note: Niet gespeeld wegens tijdsgebrek.**
 
 In dit spel zullen we een toernooitje rekker schieten houden. In elke wedstrijd zullen twee spelers tegen elkaar strijden om rekkers zo dicht mogelijk bij een doel te schieten. De winnaar gaat door naar de volgende ronde, de verliezer valt af. De laatste speler die overblijft, krijgt een vrijstelling.
 
