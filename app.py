@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 import csv
-import hashlib
 import os
 
 app = Flask(__name__)
@@ -8,8 +7,10 @@ app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 DATA_DIR = os.path.join(STATIC_DIR, "data")
-
-MOLE_HASH = "81f3bf42a93cf18dece9321ac5c93313126eb5ca92164d74643e4cbf60ecde9c"
+OUTPUT_DIR = os.path.join(STATIC_DIR, "output")
+MOLE_NAME = "De Mol"
+DEFAULT_CSV = "data/test1.csv"
+DEFAULT_BONUS = "data/extra.csv"
 
 
 def resolve_csv_path(csv_param: str):
@@ -75,8 +76,7 @@ def load_rankings(csv_path: str, bonus_path: str = None):
 
         mole_column = None
         for name in player_columns:
-            name_hash = hashlib.sha256(name.encode("utf-8")).hexdigest()
-            if name_hash == MOLE_HASH:
+            if name == MOLE_NAME:
                 mole_column = name
                 break
 
@@ -113,10 +113,19 @@ def load_rankings(csv_path: str, bonus_path: str = None):
     return ranked
 
 
+def write_rankings_csv(ranked, output_path: str):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["Rank", "Name", "Points"])
+        for rank, item in enumerate(ranked, start=1):
+            writer.writerow([rank, item["name"], item["mole_probability"]])
+
+
 @app.route("/", methods=["GET"])
 def index():
-    csv_param = request.args.get("csv", "data/test1.csv")
-    extra_param = request.args.get("extra", "data/extra.csv")
+    csv_param = request.args.get("csv", DEFAULT_CSV)
+    extra_param = request.args.get("extra", DEFAULT_BONUS)
     _, normalized = resolve_csv_path(csv_param)
     _, extra_normalized = resolve_csv_path(extra_param)
     error = request.args.get("error")
@@ -131,34 +140,34 @@ def index():
 @app.route("/check", methods=["POST"])
 def check_name():
     name = (request.form.get("name") or "").strip()
-    csv_param = request.form.get("csv", "data/test1.csv")
-    extra_param = request.form.get("extra", "data/extra.csv")
+    csv_param = request.form.get("csv", DEFAULT_CSV)
+    extra_param = request.form.get("extra", DEFAULT_BONUS)
     csv_path, normalized = resolve_csv_path(csv_param)
     extra_path, _ = resolve_csv_path(extra_param)
 
     if not name:
         return "", 204
 
-    if not csv_path:
-        return jsonify({"error": "CSV file not found."}), 400
-
-    if not extra_path:
-        return jsonify({"error": "Bonus CSV file not found."}), 400
-
-    try:
-        ranked = load_rankings(csv_path, extra_path)
-    except Exception:
-        return jsonify({"error": "Could not read the CSV file."}), 400
-
+    ranked = load_rankings(csv_path, extra_path)
     name_lookup = {item["name"].lower(): item for item in ranked if item["name"]}
     if name.lower() not in name_lookup:
-        return jsonify({"error": "Name not found in the CSV."}), 404
+        return "", 204
 
     bottom_three = {item["name"].lower() for item in ranked[-3:] if item["name"]}
     color = "red" if name.lower() in bottom_three else "green"
 
     return jsonify({"color": color})
 
+
+def generate_rankings_csv():
+    csv_path, _ = resolve_csv_path(DEFAULT_CSV)
+    extra_path, _ = resolve_csv_path(DEFAULT_BONUS)
+    ranked = load_rankings(csv_path, extra_path)
+    output_path = os.path.join(OUTPUT_DIR, "rankings.csv")
+    write_rankings_csv(ranked, output_path)
+
+
+generate_rankings_csv()
 
 if __name__ == "__main__":
     app.run(debug=True)

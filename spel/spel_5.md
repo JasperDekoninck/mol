@@ -1,4 +1,7 @@
 # Toernooitje Rekker Schieten (30 minuten)
+
+# Note: Niet gespeeld wegens tijdsgebrek.
+
 In dit spel zullen we een toernooitje rekker schieten houden. In elke wedstrijd zullen twee spelers tegen elkaar strijden om rekkers zo dicht mogelijk bij een doel te schieten. De winnaar gaat door naar de volgende ronde, de verliezer valt af. De laatste speler die overblijft, krijgt een vrijstelling.
 
 Tijdens elke wedstrijd, bepaal jij hoeveel rekkers je tegenspeler krijgt (tussen de 1-5). Hoe meer rekkers je tegenspeler krijgt, hoe makkelijker het voor hem/haar wordt om te winnen (meer kansen om dicht bij het doel te schieten). Elke rekker die je tegenspeler krijgt, zorgt ervoor dat er 20 euro naar de groepspot gaat.

@@ -1,5 +1,7 @@
 # Een Simpele Quiz (15 minuten)
 
+# Note: vragen waren te simpel.
+
 In dit eerste spel zullen de spelers samen een quiz moeten afleggen. Er zijn tien meerkeuzevragen met drie antwoorden. Op elk moment moet één speler naar voor geschoven worden. Deze speler zal het antwoord kiezen voor de huidige vraag. Als het antwoord correct is, gaat dezelfde speler de woordvoerder zijn voor de volgende vraag. Als het antwoord fout is, valt de speler af en moet een volgende woordvoerder gekozen worden (die nog dezelfde vraag moet beantwoorden met de overgebleven opties). 
 
 Zodra alle vragen correct beantwoord zijn, mag de woordvoerder kiezen voor 1000 euro in de pot, of 1 vrijstelling voor de volgende eliminatieronde. De spelers krijgen telkens twee minuten om iemand te kiezen als woordvoerder en 1 minuut om het antwoord te bepalen. Elke keer deze limiet overschreden wordt, gaat er 100 euro van de mogelijke prijs af.

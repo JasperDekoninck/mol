@@ -1,4 +1,7 @@
 # Waarheid of Leugen (15 minuten)
+
+# Note: Spel was te complex/moeilijk voor de leugendetectors, concept is wel leuk.
+
 Spel 3 en spel 4 zijn met elkaar verwoven. Aan het begin van spel 3 vraagt de spelleider voor twee groepen:
 - 6 goede bluffers
 - 2 leugendetectors

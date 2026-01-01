@@ -1,54 +1,54 @@
-# Andreas
+# Anon1
 Spel 1: Geld
 Spel 5: maximum 3
 Spel 8: 1500 euro
 
-# Axel
+# Anon2
 Spel 1: Geld
 Spel 5: minimum 2
 Spel 8: 100 euro
 
-# Babet
+# Anon3
 Spel 1: Geld
 Spel 5: maximum 4
 Spel 8: 250 euro
 
-# Bram
+# Anon4
 Spel 1: Vrijstelling
 Spel 5: maximum 2
 Spel 6: 500 euro
 
-# Caro
+# Anon5
 Spel 1: Vrijstelling
 Spel 5: minimum 3
 Spel 8: 1000 euro
 
-# Daphne
+# Anon6
 Spel 1: Geld
 Spel 5: minimum 5
 Spel 8: 500 euro
 
-# Eva
+# Anon7
 Spel 1: Geld
 Spel 5: Minimum 3
 Spel 8: 1500 euro
 
-# Jason
+# Anon8
 Spel 1: Vrijstelling
 Spel 5: minimum 4
 Spel 8: 250 euro
 
-# Steph
+# Anon9
 Spel 1: Geld
 Spel 5: Geen restrictie
 Spel 8: 1000 euro
 
-# Raf
+# Anon10
 Spel 1: Vrijstelling
 Spel 5: maximum 1
 Spel 8: 100 euro
 
-# Tom
+# Anon11
 Spel 1: Vrijstelling
 Spel 5: maximum 3
 Spel 8: 2000 euro
